@@ -4,8 +4,6 @@
   Problem 339A - Helpful Maths
   Written: October 31, 2015
 */
-package helpfulmaths;
-
 import java.util.*;
 
 
@@ -39,14 +37,14 @@ public class HelpfulMaths {
            swapped = false;
             j++;
             //If numbers adjacent aren't sorted, then they are sorted
-            for (int i = 0; i < numbers.length - j; i++) {                                       
-                  if (numbers[i] > numbers[i + 1]) {                          
+            for (int i = 0; i < numbers.length - j; i++) {
+                  if (numbers[i] > numbers[i + 1]) {
                         tmp = numbers[i];
                         numbers[i] = numbers[i + 1];
                         numbers[i + 1] = tmp;
                         swapped = true;
                   }
-            }                
+            }
       }
         //Prints the expression now from least to greatest integer form
         for (int x=0;x<numbers.length;x++)
@@ -55,5 +53,5 @@ public class HelpfulMaths {
             else System.out.print(numbers[x]+"+");
         }
     }
-    
+
 }

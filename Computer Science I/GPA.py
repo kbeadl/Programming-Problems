@@ -36,6 +36,4 @@ for name in fil:  #reads the file line by line
     print ("Total quality points is",total)
     print ("Grade point average is %0.4f"%(gpa)) #gpa is printed with 4 decimals
     print("")
-        
-    
-
+fil.close() #closes file        
